@@ -1,0 +1,46 @@
+.navbar{
+    margin: 30px 20px 0 20px;
+    border-radius: 20px;
+
+}
+.navbar-brand{
+    color: white;
+    font-weight: 600;
+}
+a.navbar-brand {
+    color: aliceblue;
+}
+.btn{
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.col-md-2.logo{
+    border: 1px solid rgb(185, 180, 180);
+    margin: 0 20px 20px 50px;
+    height: 50px;
+    border-radius: 5px;
+    width:180px;
+}
+.row{
+ 
+    height: 50px;
+    
+}
+.col-md-2.card{
+    background-image: url("https://nationaltoday.com/wp-content/uploads/2022/06/10-Earth-Month.jpg");
+    color: white;
+}
+
+.col-md-3.news{
+    display: inline-block;
+   border: 1px solid rgb(220, 215, 215);
+   width: 314px;
+   height: 195px;
+}
+
+img.col-md-3.image{
+width: 314px;
+height: 195px;
+opacity: 0.7;
+}
