@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body >
+    <%- include('partials/header') %>
+        <table class="table table-bordered table-hover" id="myTable" style="width: 1100px; margin-top: 100px; margin-left: 100px;">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Title</th>
+                <th scope="col">Describtion</th>
+                <th scope="col">Published At</th>
+                <th scope="col">Action</th>
+            
+              </tr>
+            </thead>
+            <% for(let i=0;i<news.result.length;i++){%>    
+            <tbody id="tableData">
+              <tr>
+                <td><%= news.result[i].name %></td>
+                <td style="width:400px" class="text" ><textarea class="form-control" id='<%= i %>'  rows="4"><%= news.result[i].title %></textarea></td>
+                <td style="width:400px" ><textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="4"><%= news.result[i].description %></textarea></td>
+                <td><%= news.result[i].publishedAt %></td>
+                <td><button class="btn btn-warning"  type="button" style="margin-bottom: 3px;" ="editButton" onclick="edit('<%= i %>')">Edit</button>
+               <button class="btn btn-danger" type="button">Delet</button></td>
+              </tr>
+            </tbody>
+            <%}%>
+          </table>
+          <script src="../server.js"></script>
+          <script>
+            let news = <%- JSON.stringify(news) %>
+          </script>
+    </body>
+</html>
