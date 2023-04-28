@@ -1,0 +1,9 @@
+axios
+express
+ejs
+bcryptjs
+body-parser
+express-session
+jsonwebtoken
+mongoose
+node-localstorage
